@@ -7,10 +7,14 @@ nav a {
     display: block;
     padding: 20px;
 }
+main {
+   max-width: 840px;
+}
 h1 {
     color: darkblue;
+    text-align: center;
 }
-img {
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
@@ -18,5 +22,23 @@ img {
     box-shadow: 0 0 30px gray;
 }
 p {
-    padding: 10px;
+    padding: 0;
+}
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px soild rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+aside img {
+    width: 200px;
+    height: auto;
+}
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
 }
