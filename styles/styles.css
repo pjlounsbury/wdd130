@@ -1,24 +1,28 @@
+: :root {
+    --text-alignment: center
+    --padding: 10px
+}
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: var(--padding);
 }
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: var(--padding);
 }
 main {
    max-width: 840px;
 }
 h1 {
     color: darkblue;
-    text-align: center;
+    text-align: var(--text-alignment);
 }
 main img {
     width: 200px;
     height: auto;
     border: 1px solid black;
-    padding: 2px;
+    padding: var(--padding);
     box-shadow: 0 0 30px gray;
 }
 p {
@@ -28,7 +32,7 @@ aside {
     width: 20rem;
     margin: 1rem;
     border: 3px solid black;
-    padding: 1rem;
+    padding: var(--padding);
     background-color: #eee;
     color: #333;
     text-align: center;
@@ -40,5 +44,5 @@ aside img {
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
-    text-align: center;
+    text-align: var(--text-alignment);
 }
