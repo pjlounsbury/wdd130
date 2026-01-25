@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #114b5f;
-    --secondary-color: #6b2737;
-    --accent1-color: #456990;
-    --accent2-color: #f45b69;
+    --primary-color: #055a05;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;    
 }
@@ -54,8 +54,8 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.8;
-    background-color: var(--secondary-color);
-    color: var(--accent2-color);
+    background-color: var(--accent1-color);
+    color: white;
 }
 
 article {
