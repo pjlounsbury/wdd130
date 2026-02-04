@@ -23,28 +23,20 @@ nav a {
 }
 
 header, .grid, footer {
-    max-width: 840px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .grid {
     display: grid;
-    align-items: center;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
 }
 
 main {
    max-width: 640px;
-   grid-column: 2/3;
-   margin: 1rem;
-}
-
-aside{
-    width: 20rem;
-    margin:  10px 0;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    border: solid black;
+   margin: 1rem 0;
+   grid-column: 2;
 }
 
 h1 {
@@ -61,15 +53,23 @@ main img {
     padding: var(--padding);
     box-shadow: 0 0 30px gray;
 }
+
 p {
-    padding: 0;
+    padding: 1rem;
 }
 
+aside{
+    max-width: 30rem;
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+    border: solid black;
+}
 
 aside img {
     width: 100%;
     height: auto;
-    text-align: center;
+    display: block;
 }
 
 aside h2 {
@@ -81,11 +81,12 @@ aside h2 {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
     background-color: #333;
     color: white;
     margin-top: 15px;
     border-top: 1px solid #000;
-    text-align: var(--text-alignment);
     padding: 2rem 1rem;
 }
 
@@ -94,5 +95,7 @@ footer {
     padding: 1rem;
     background-color: aliceblue;
     color: black;
-    margin: 1rem;
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
 }
