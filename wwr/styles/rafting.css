@@ -100,25 +100,59 @@ header {
 .adventure {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 25% 60% 15%;
+    grid-template-rows: 1fr 2fr;
     background-color: var(--accent1-color);
     color: var(--primary-color);
+    place-items: center;
+    justify-content: space-evenly;
 }
 
 h2 {
     grid-column-start: 1;
     grid-column-end: span 5;
+    align-self: center;
 }
 
-.adventure img {
+.adventure img, .employees img {
     grid-row-start: 2;
     width: 125px;
     height: auto;
 }
 
-figure {
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    place-items: center;
     justify-content: space-evenly;
 }
+
+.contact {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: center;
+}
+
+.middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 /0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
 
 footer {
     display: flex;

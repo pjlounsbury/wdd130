@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us: White Water Rafting</title>
+    <meta name="description" content="Contact us page for White Water Rafting, contact information and a contact form for submitting questions about the company and its services.">
+    <meta name="author" content="Pamela Lounsbury">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/wwr-logo-blue.jpg" alt="Blue White Water Rafting Logo">
+        </div>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>  
+    <main>
+        <h1>White Water Rafiting Company</h1>
+        <div class="contact">
+            <p>123 Main River Street</p>
+            <p>Whitewater, California</p>
+            <p>+1 999 999 9999</p>
+            <p>info@whitewater.com</p>
+        </div>
+        <section class="middle">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52962.94783835806!2d-116.7224629391602!3d33.93638917800366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db3d64182daf11%3A0x2d76993b99ba0a91!2sWhitewater%2C%20CA%2092282!5e0!3m2!1sen!2sus!4v1770501646569!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form>
+                <div class="form-item column2">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+                <fieldset>
+                    <legend>Message Purpose</legend>
+                    <div class="form-item column1">
+                        <input type="radio" id="purpose" name="purpose">
+                        <label for="purpose">General Inquiry</label>
+                    </div> 
+                    <div class="form-item column1">
+                        <input type="radio" id="purpose" name="purpose">
+                        <label for="purpose">Reservation Question</label>
+                    </div>  
+                    <div class="form-item column1">
+                        <input type="radio" id="purpose" name="purpose">
+                        <label for="purpose">Website Suggestion</label>
+                    </div>   
+                </fieldset>         
+                <div class="form-item">
+                    <label for="feedback">Message:</label>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Type here"></textarea>
+                </div>
+                <div class="form-item column1">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please Subscribe me to the monthly newsletter!</label>
+                </div>
+                <button type="submit">Get in Touch!</button>
+            </form>
+        </section>
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+            <figure>
+                <img src="images/fabain.jpg" alt="Fabain">
+                <figcaption>Fabain</figcaption>
+            </figure>
+            <figure>
+                <img src="images/pamela.jpg" alt="Pamela">
+                <figcaption>Pamela</figcaption>
+            </figure>
+            <figure>
+                <img src="images/louie.jpg" alt="Louie">
+                <figcaption>Louie</figcaption>
+            </figure>
+        </section>
+    </main>  
+    <footer>
+        <p>©️2026 🚣🏻‍♂️White Water Rafting🚣🏻‍♂️ 🐈‍⬛Pamela Lounsbury🐈‍⬛</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook-square-logo.svg" alt="Square Facebook Logo" width=50>
+            </a>
+            <a href="https://x.com">
+                <img src="images/x-logo.svg" alt="X Logo" width="50">
+            </a>
+            <a href="http://instagram.com">
+                <img src="images/instagram-logo.svg" alt="Instagram Logo" width="50">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
