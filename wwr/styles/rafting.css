@@ -18,19 +18,25 @@ body {
     color: var(--accent1-color);
 }
 
-header, main, footer {
+header,
+main,
+footer {
     width: 840px;
     margin: 0 auto;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     text-align: center;
     background-color: var(--accent1-color);
 }
 
-nav, p, section, article {
+nav,
+p,
+section,
+article {
     margin: 16px;
     padding: 8px;
 }
@@ -113,7 +119,9 @@ h2 {
     align-self: center;
 }
 
-.adventure img, .employees img {
+.adventure img,
+.employees img,
+.trips img {
     grid-row-start: 2;
     width: 125px;
     height: auto;
@@ -144,19 +152,128 @@ h2 {
 }
 
 form {
-    width: 650px;
+    width: 450px;
     margin: 0 auto;
     padding: 1rem;
     border: 1px solid rgb(0 0 0 /0.1);
     border-radius: 0.5rem;
-    background-color: #eee;
+    background-color: var(--accent2-color);
     display: grid;
 }
 
+button {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+.home {
+    position: relative;
+}
+
+.home img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.home h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--primary-color)
+}
+
+.home article {
+    position: absolute;
+    top: 385px;
+    left: 75px;
+    width: 75%;
+    padding: 16px;
+    background-color: var(--secondary-color);
+}
+
+.home article img {
+    float: right;
+    width: 125px;
+}
+
+.filler {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    place-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.filler img {
+    width: 125px;
+    justify-items: center;
+}
+
+.action article {
+    display: grid;
+    grid-template-columns: 275px 500px;
+    grid-template-rows: 400px 25px;
+    padding: 16px;
+    background-color: var(--secondary-color);
+    justify-content: space-evenly;
+}
+
+.action img {
+    width: 250px;
+}
+
+.action a {
+    grid-column: span 2;
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 5px solid(--accent1-color);
+    background-color: var(--accent1-color);
+    text-align: center;
+    padding: 3px;
+    align-items: center;
+}
+
+.trips {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    justify-content: space-evenly;
+}
+
+.trips figure {
+    border: 3px solid var(--accent2-color);
+    padding: 10px;
+}
+
+table {
+    width: 790px;
+    border-collapse: collapse;
+    border: 2px solid var(--accent2-color);
+    letter-spacing: 1px;
+}
+
+th,
+td {
+    border: 1px solid var(--accent2-color);
+    padding: 8px 12 px;
+    text-align: center;
+}
+
+thead tr {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    font-weight: 700;
+}
 
 footer {
     display: flex;
     justify-content: center;
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
 }
-
